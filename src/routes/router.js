@@ -1,12 +1,12 @@
-const products = require('./products/products');
-const getId = require('./idGet/getId');
 const mainRoute = require('./main/main');
-const signUpRoute = require('./users/sing-up-route');
+const productsRoute = require('./products/handleProductsRout');
+const signUpRoute = require('./users/signUpRoute');
 
 const router = {
-  '/signup': signUpRoute,
-  '/products':products,
+  'signup': signUpRoute,
+  'products': productsRoute,
   default: mainRoute
 };
 
 module.exports = router;
+
